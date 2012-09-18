@@ -2,7 +2,7 @@
 /**
 * Defines the FAQ page type - initial code created by ss generator
 */
-class FacebookStreamPage extends Page {
+class FacebookLikeBoxPage extends Page {
 
 	static $db = array(
     	'FacebookURL' => 'Text',
@@ -21,7 +21,7 @@ class FacebookStreamPage extends Page {
 
 }
 
-class FacebookStreamPage_Controller extends Page_Controller {
+class FacebookLikeBoxPage_Controller extends Page_Controller {
 
 }
 
