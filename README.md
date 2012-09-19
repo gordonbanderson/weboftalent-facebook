@@ -1,26 +1,37 @@
-Basic Facebook Integration
-==========================
+##Functionality
+* Add a like button to any page
+* Add a facebook like box to any page
+* Add facebook metadata to any page
 
-Include Facebook JS
-===================
-Add the following to your template somewhere near the start of your HTML
+## Installation
+    git clone git://github.com/gordonbanderson/weboftalent-facebook.git
+    cd weboftalent-facebook
+    git checkout stable24
 
-    <% include <% include DownloadFacebookJS %>
+The name of the output directory does not matter
 
-This adds the javascript necessary to download facebook connect
+## Usage
+### Site Configuration
+A 'Facebook Metadata' tab will now appear in the Site Config.  There you can upload an image that will be shown in Facebook when a link from the site is provided.  Otherwise facebook tries to guess from the content.
+
+### Templates
+
+#### Facebook API
+Add the following to your Page templates, after the body tag.
+
+    <% include DownloadFacebookJS %>
+
+This will provide the Javascript required to load the Facebook API.  It is a necessary step for what follows.
+
+#### Like Button
+Insert the following where you would like the Like Button to appear
+
+	<% include FacebookLikeButton %>
+
+### Content Types
+#### FacebookLikeBoxPage
+Create a page of type 'Facebook Like Box Page'.  In the Facebook tab, enter the URL of your page (e.g. http://www.facebook.com/WebOfTalentLtd).  If you do not do this an error message will appear on the page in the public version of the site.
 
 
-Facebook Like Button
-====================
-Simply add the following to your template
-
-    	<% include FacebookLikeButton %>
-
-
-Facebook Like Box
-=================
-This incorporates a stream of statuses from a facebook page.  Add a page of type 'FacebookStreamPage' using the CMS.  In the Facebook tab there are 2 parameters
-
-* FacebookURL - the url of your page, e.g. http://facebook.com/mygreatfacebookpage
-* Width of stream in pixels - the width of the rendered facebook stream in pixels, min advised is 292px wide
-
+## Silverstripe Version Compatibility
+2.4 only (tested with 2.4.5+) - stable24 branch
