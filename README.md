@@ -28,6 +28,13 @@ Insert the following where you would like the Like Button to appear
 
 	<% include FacebookLikeButton %>
 
+#### Facebook Metadata
+In the head section of your Page template, insert the following:
+
+	<% include FacebookMetadata %>
+
+This will provide basic metadata extracted from existing page information, and also add the logo if you have provided one in the SiteConfig 'Facebook Metadata' tab.
+
 ### Content Types
 #### FacebookLikeBoxPage
 Create a page of type 'Facebook Like Box Page'.  In the Facebook tab, enter the URL of your page (e.g. http://www.facebook.com/WebOfTalentLtd).  If you do not do this an error message will appear on the page in the public version of the site.
