@@ -1,0 +1,16 @@
+{
+	"name": "weboftalent/facebook",
+	"description": "This module allows one to easily add a Facebook Likebox, a Likes button, and provide Facebook metadata",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "facebook","weboftalent"],
+	"authors": [
+	{
+		"name": "Gordon Anderson",
+		"email": "gordon@weboftalent.asia"
+	}
+	],
+	"require":
+	{
+		"silverstripe/framework": "3.*"
+	}
+}
