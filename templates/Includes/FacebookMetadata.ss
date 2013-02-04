@@ -1,8 +1,8 @@
 <% if SiteConfig.FacebookLogo %>
 <% control SiteConfig.FacebookLogo %>
 <meta property="og:image" content="$URL"/>
-<meta property="og:image:width" content="$Width">
-<meta property="og:image:height" content="$height">
+<meta property="og:image:width" content="$Width"/>
+<meta property="og:image:height" content="$height"/>
 <% end_control %>
 <% end_if %>
 <meta property="og:title" content="$Title"/>
