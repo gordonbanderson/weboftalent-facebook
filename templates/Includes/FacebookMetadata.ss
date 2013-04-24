@@ -11,7 +11,7 @@
 <% if $MetaDescription %>
 <meta property="og:description" content="$MetaDescription"/>
 <% else %>
-<meta property="og:description" content="$Content.Summary(50).XML"/>
+<meta property="og:description" content="$RemoveEntities($Content.Summary(50).XML)"/>
 <% end_if %>
 <% if $Locale %>
 <meta property="og:locale" content="$Locale"/>
