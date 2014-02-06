@@ -57,7 +57,8 @@ class FacebookCredentials extends Page {
 
 
   static function getFacebookApplicationID() {
-    return self::$facebook_application_id;
+       $config = SiteConfig::current_site_config();
+        return $config->getOGApplicationID();
   }
 
    static function getFacebookApplicationSecret() {
@@ -65,7 +66,8 @@ class FacebookCredentials extends Page {
   }
   
    static function getFacebookUserID() {
-    return self::$facebook_user_id;
+    $config = SiteConfig::current_site_config();
+    return $config->getOGAdminID();
   }
 
 }
