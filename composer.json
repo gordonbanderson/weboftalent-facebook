@@ -1,5 +1,5 @@
 {
-	"name": "weboftalent/weboftalent-facebook",
+	"name": "weboftalent/facebook",
 	"description": "This module allows one to easily add a Facebook Likebox, a Likes button, and provide Facebook metadata",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "facebook","weboftalent"],
